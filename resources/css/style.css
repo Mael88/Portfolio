@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --base-color: black;
+    --main-color: hsl(115, 91%, 26%);
+    --accent: rgb(23, 217, 23);
+    --accent2: rgb(248, 162, 3);
+    --text-color: white;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    background: var(--base-color);
+    color: var(--text-color);
+}
+
+
+/* ## HEADER SECTION */
+
+header {
+    width: 76%;
+    height: 75px;
+    border-radius: 50px;
+    padding: 10px;
+    position: fixed;
+    top: 30px;
+    left: 12%;
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+nav { 
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+/* ## HERO SECTION */
+
+.title {
+    margin-top: 170px;
+    height: 350px;
+    width: 60%;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-top: 40px;
+}
+
+/* ## ABOUT ME SECTION */
+
+.text {
+    font-size: 1.8rem;
+    line-height: 1.8em;
+    max-width: 520px;
+    margin-left: 20%;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.myself {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.myself img {
+    width: 350px;
+    height: auto;
+}
+
+/* ## PROJECTS SECTION */
+
+.projects {
+    width: 1271px;
+    height: 207px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.skills {
+    width: 1069px;
+    height: 78px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* ## FOOTER */ 
+
+footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--main-color);
+}
+
+footer h2 {
+    margin-bottom: 5px;
+}
