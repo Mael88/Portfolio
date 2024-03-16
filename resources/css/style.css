@@ -33,10 +33,12 @@ header {
     left: 12%;
     background-color: var(--main-color);
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
 nav { 
     float: right;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -48,6 +50,17 @@ nav li {
     margin-right: 50px;
 }
 
+header a {
+    color: var(--text-color);
+}
+
+header a:focus {
+    color: var(--accent2);
+}
+
+header a:active {
+    color: var(--accent2);
+}
 
 /* ## HERO SECTION */
 
@@ -63,6 +76,10 @@ nav li {
     padding-top: 40px;
 }
 
+.accent {
+    color: var(--accent)
+}
+
 /* ## ABOUT ME SECTION */
 
 .text {
@@ -72,6 +89,10 @@ nav li {
     margin-left: 20%;
     margin-top: 0;
     display: inline-block;
+}
+
+.text h2 {
+    text-align: center;
 }
 
 .myself {
@@ -92,28 +113,83 @@ nav li {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    border: 1px solid var(--main-color)
 }
 
 .skills {
     width: 1069px;
-    height: 78px;
+    height: 95px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    border: 1px solid green;
+    text-align: center;
+    font-size: 3.2rem;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.skills legend {
+    font-size: 2.5rem;
+}
+
+.skills i {
+    margin-left: 10px;
 }
 
 /* ## FOOTER */ 
 
 footer {
     margin-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-top: 5px;
     width: 100%;
     font-size: 1.6rem;
     text-align: center;
     background-color: var(--main-color);
+    position: relative;
 }
 
 footer h2 {
     margin-bottom: 5px;
+}
+
+footer i {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 2.4rem;
+    color: var(--accent2);
+}
+
+footer p {
+    color: rgb(174, 174, 174);
+    font-size: 1rem;
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+}
+
+/* ## ASIDE */
+
+aside {
+    position: fixed;
+    left: -5px;
+    bottom: 15%;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    border: 1px solid var(--main-color);
+    padding: 5px;
+}
+
+aside i {
+    font-size: 3.2rem;
+    color: var(--accent2);
 }
