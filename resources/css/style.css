@@ -1,3 +1,5 @@
+/* ## GENERAL STYLING */
+
 * {
     box-sizing: border-box;
 }
@@ -18,9 +20,151 @@ body {
     margin: 0;
     background: var(--base-color);
     color: var(--text-color);
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0.763), hsla(0, 0%, 0%, 0.763)), 
+                        url(../images/Background\ Portfolio.webp);
 }
 
+/* ## FONT-STYLE */
 
+header {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+header a {
+    color: var(--text-color);
+}
+
+header a:focus {
+    color: var(--accent2);
+}
+
+header a:active {
+    color: var(--accent2);
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.accent {
+    color: var(--accent)
+}
+
+.text {
+    font-size: 1.8rem;
+}
+
+.text h2 {
+    text-align: center;
+}
+
+.skills {
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--accent);
+}
+
+.skills legend {
+    font-size: 2.5rem;
+}
+
+footer {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+footer i {
+font-size: 2.4rem;
+color: var(--accent2);
+}
+
+footer p {
+    color: hsl(100, 19%, 72%);
+    font-size: 1rem;
+}
+
+aside i {
+    font-size: 3.2rem;
+    color: var(--accent2);
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+ 
+    .text {
+        font-size: 1.4rem;
+    }
+
+    .skills {
+        font-size: 2.6rem;
+    }
+    
+    .skills legend {
+        font-size: 2rem;
+    }
+    
+    footer {
+        font-size: 1.2rem;
+    }
+    
+    footer i {
+    font-size: 2rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+    
+    aside i {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    header {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.4rem;
+    }
+ 
+    .text {
+        font-size: 1rem;
+    }
+
+    .skills {
+        font-size: 1.4rem;
+    }
+    
+    .skills legend {
+        font-size: 1rem;
+    }
+    
+    footer {
+        font-size: 0.8rem;
+    }
+    
+    footer i {
+    font-size: 1rem;
+    }
+    
+    footer p {
+        font-size: 0.8rem;
+    }
+    
+    aside i {
+        font-size: 1rem;
+    }
+}
 /* ## HEADER SECTION */
 
 header {
@@ -32,8 +176,6 @@ header {
     top: 30px;
     left: 12%;
     background-color: var(--main-color);
-    font-size: 1.6rem;
-    font-weight: bold;
 }
 
 nav { 
@@ -50,16 +192,24 @@ nav li {
     margin-right: 50px;
 }
 
-header a {
-    color: var(--text-color);
-}
+@media only screen and (max-width: 425px) {
+    header {
+        height: 50px;
+    }
 
-header a:focus {
-    color: var(--accent2);
-}
+    header img {
+        display: none;
+    }
 
-header a:active {
-    color: var(--accent2);
+    nav {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav li {
+        margin-right: 8px;
+    }
 }
 
 /* ## HERO SECTION */
@@ -68,31 +218,26 @@ header a:active {
     margin-top: 170px;
     height: 350px;
     width: 60%;
-    font-size: 3rem;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    padding-top: 40px;
+    padding-top: 40px; 
 }
 
-.accent {
-    color: var(--accent)
+@media only screen and (max-width: 1024px) {
+    .title {
+        margin-bottom: 30px;
+        width: 70%;
+    }
 }
-
 /* ## ABOUT ME SECTION */
 
 .text {
-    font-size: 1.8rem;
     line-height: 1.8em;
     max-width: 520px;
     margin-left: 20%;
     margin-top: 0;
     display: inline-block;
-}
-
-.text h2 {
-    text-align: center;
 }
 
 .myself {
@@ -105,10 +250,55 @@ header a:active {
     height: auto;
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .text {
+        display: block;
+    }
+    .myself {
+        display: block;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    section.About_me {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        margin-left: 0;
+    }
+
+    .myself {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .text {
+        max-width: 300px;
+    }
+
+    .myself {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .myself img {
+        width: 300px;
+        height: auto;
+    }
+}
+
 /* ## PROJECTS SECTION */
 
 .projects {
-    width: 1271px;
+    width: 80%;
     height: 207px;
     margin-left: auto;
     margin-right: auto;
@@ -117,23 +307,16 @@ header a:active {
 }
 
 .skills {
-    width: 1069px;
+    width: 70%;
     height: 95px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     border: 1px solid green;
-    text-align: center;
-    font-size: 3.2rem;
-    color: var(--accent);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-}
-
-.skills legend {
-    font-size: 2.5rem;
 }
 
 .skills i {
@@ -147,8 +330,6 @@ footer {
     padding-bottom: 50px;
     padding-top: 5px;
     width: 100%;
-    font-size: 1.6rem;
-    text-align: center;
     background-color: var(--main-color);
     position: relative;
 }
@@ -160,13 +341,9 @@ footer h2 {
 footer i {
     margin-top: 10px;
     margin-left: 5px;
-    font-size: 2.4rem;
-    color: var(--accent2);
 }
 
 footer p {
-    color: rgb(174, 174, 174);
-    font-size: 1rem;
     position: absolute;
     left: 10px;
     bottom: 5px;
@@ -185,11 +362,18 @@ aside ul {
 }
 
 aside li {
-    border: 1px solid var(--main-color);
+    border: 2px double hsl(100, 19%, 72%);
     padding: 5px;
 }
 
-aside i {
-    font-size: 3.2rem;
-    color: var(--accent2);
+@media only screen and (max-width: 768px) {
+    aside {
+        left: -15px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    aside {
+        display: none;
+    }
 }
