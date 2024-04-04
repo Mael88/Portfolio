@@ -175,7 +175,9 @@ header {
     position: fixed;
     top: 30px;
     left: 12%;
-    background-color: var(--main-color);
+    background-color: hsla(115, 96%, 30%, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: inset 10px 10px 10px 10px hsla(115, 50%, 22%, 0.7);
 }
 
 nav { 
