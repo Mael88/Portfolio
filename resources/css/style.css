@@ -36,13 +36,22 @@ header a {
     color: var(--text-color);
 }
 
-header a:focus {
+header a:hover {
     color: var(--accent2);
 }
 
 header a:active {
     color: var(--accent2);
 }
+
+#toggle_button:hover {
+ color: var(--accent2);
+}
+
+#toggle_button i {
+    font-size: 2rem;
+}
+
 
 .title {
     font-size: 3rem;
@@ -91,10 +100,15 @@ aside i {
     color: var(--accent2);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 862px) {
     header {
         font-size: 1.2rem;
     }
+
+    #toggle_button i {
+        font-size: 1.6rem;
+    }
+    
 
     .title {
         font-size: 2.5rem;
@@ -134,6 +148,11 @@ aside i {
         font-size: 0.8rem;
     }
 
+    #toggle_button i {
+        font-size: 1rem;
+    }
+    
+
     .title {
         font-size: 1.4rem;
     }
@@ -169,7 +188,8 @@ aside i {
 /* ## HEADER SECTION */
 
 header {
-    width: 76%;
+    width: 85%;
+    max-width: 1074.4px;
     height: 75px;
     border-radius: 50px;
     padding: 10px;
@@ -178,7 +198,7 @@ header {
     left: 12%;
     background-color: hsla(115, 96%, 30%, 0.7);
     backdrop-filter: blur(10px);
-    box-shadow: inset 10px 10px 10px 10px hsla(115, 50%, 22%, 0.7);
+    box-shadow: inset 0px 0px 5px 10px hsla(115, 50%, 22%, 0.7);
 }
 
 nav { 
@@ -188,12 +208,33 @@ nav {
 
 nav ul {
     list-style-type: none;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav li {
     display: inline-block;
     margin-right: 50px;
 }
+
+#toggle_button {
+    border: 1px solid hsl(100, 19%, 72%);
+    background-color: hsla(115, 96%, 30%, 0.7);
+    padding: 5px;
+    position: relative;
+}
+
+#toggle_button:hover {
+    box-shadow: 0px 0px 5px 4px hsla(114, 51%, 16%, 0.7);
+}
+
+#toggle_button:active {
+    bottom: -5px;
+    box-shadow: none;
+}
+
 
 @media only screen and (max-width: 425px) {
     header {
