@@ -189,13 +189,12 @@ aside i {
 
 header {
     width: 85%;
-    max-width: 1074.4px;
     height: 75px;
     border-radius: 50px;
     padding: 10px;
     position: fixed;
     top: 30px;
-    left: 12%;
+    left: 10%;
     background-color: hsla(115, 96%, 30%, 0.7);
     backdrop-filter: blur(10px);
     box-shadow: inset 0px 0px 5px 10px hsla(115, 50%, 22%, 0.7);
@@ -294,7 +293,7 @@ nav li {
     height: auto;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1179px) and (min-width: 769px) {
     .text {
         display: block;
     }
