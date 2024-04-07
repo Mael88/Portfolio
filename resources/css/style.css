@@ -206,30 +206,31 @@ nav {
 }
 
 nav ul {
+    height: 55px;
+    margin-top: auto;
+    margin-bottom: auto;
     list-style-type: none;
     display:flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0;
 }
 
 nav li {
     display: inline-block;
     margin-right: 50px;
-}
-
-#toggle_button {
     border: 1px solid hsl(100, 19%, 72%);
     background-color: hsla(115, 96%, 30%, 0.7);
     padding: 5px;
     position: relative;
 }
 
-#toggle_button:hover {
+nav li:hover {
     box-shadow: 0px 0px 5px 4px hsla(114, 51%, 16%, 0.7);
 }
 
-#toggle_button:active {
+nav li:active {
     bottom: -5px;
     box-shadow: none;
 }
@@ -248,6 +249,10 @@ nav li {
         float: none;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    nav ul {
+        height: 30px;
     }
 
     nav li {
